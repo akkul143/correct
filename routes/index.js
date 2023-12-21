@@ -1,7 +1,7 @@
-mongoose.connect("mongodb://127.0.0.1:27017/practicekaro");
 var express = require('express');
 var router = express.Router();
 const userModel=require("./users");
+const mongoose=require(mongoose);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
