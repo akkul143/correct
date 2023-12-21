@@ -5,4 +5,4 @@ const userschema=mongoose.Schema({
   name:String,
   age:Number
 });
-module.exports=mongoose.module("user",userschema);
+module.exports=mongoose.model("user",userschema);
