@@ -1,7 +1,7 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 const userModel=require("./users");
-const mongoose=require(mongoose);
+const mongoose=require("mongoose");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,7 +12,7 @@ router.get("/create",async function(req,res){
  const createduser=await userModel.create({
     username:"akkul",
     age:25,
-    name:"gautam"
+    name:"gautam",
   })
   res.send(createduser);
 
